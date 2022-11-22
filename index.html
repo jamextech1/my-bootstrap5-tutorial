@@ -11,6 +11,11 @@
       crossorigin="anonymous"
     />
     <title>Net Ninja Pro - The Book</title>
+    <style>
+      body {
+        margin-bottom: 20%;
+      }
+    </style>
   </head>
   <body>
     <!-- heading tags -->
@@ -94,12 +99,39 @@
     </div>
 
     <!-- margin and padding -->
+    <div class="bg-primary m-1 p-1">small margin and padding</div>
+    <div class="bg-primary m-5 p-5">large margin and padding</div>
+    <div class="bg-primary my-3 px-5">
+      margin in y direction, paddin in x direction
+    </div>
+    <div class="bg-primary mt-3 mb-4 ms-5 me-1 ps-5 pt-4 pe-2 pb-1">
+      m & p for each direction
+    </div>
 
     <!-- borders -->
+    <div class="m-3 p-2 border">default border</div>
+    <div class="m-3 p-3 border-top border-end">individual borders</div>
+    <div class="m-3 p-3 border-start border-success">
+      border success color at start
+    </div>
+    <div class="m-3 p-3 border-start border-danger border-5">
+      thicker border
+    </div>
+    <div class="m-3 p-3 rounded border border-5">rounded border</div>
+    <div class="m-3 p-3 rounded-pill border border-5">rounded pill border</div>
 
     <!-- box shadow -->
+    <p class="m-3 p-3 shadow-sm">element with small shadow</p>
+    <p class="m-3 p-3 shadow-lg">element with large shadow</p>
+    <p class="m-3 p-3 shadow">element with medium shadow</p>
 
     <!-- font-weight -->
+    <p class="fw-bold">bold text</p>
+    <p class="fw-bolder">bolder text</p>
+    <p>normal text</p>
+    <p class="fw-light">light text</p>
+    <p class="fst-italic">italic text</p>
+    <p class="fst-italic fw-light">italic light text</p>
 
     <!-- bootstrap js -->
     <script

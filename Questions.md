@@ -3,3 +3,9 @@
 # mehn, my question is confusing but, omo the bootstrap classes and how it applies, confuse more 😂.
 
 ##
+
+## how can i work with bootstrap and css together,
+
+### Like can i use normal css on my project and implement bootstap only where i need bootstrap to be added,
+
+## something like if i want to use normal css on my hero section of a page but in a section like pricing section and i want to use bootstrap for the pricing cards, is it possible?

@@ -521,19 +521,30 @@
           <div class="col-lg-6">
             <form>
               <label for="email" class="form-label">Email Address: </label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="e.g.mario@example.com"
-              />
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="e.g.mario@example.com"
+                />
+              </div>
+
               <label for="name" class="form-label">Name: </label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="e.g. Mario"
-              />
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-right-dots-fill"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="e.g. Mario"
+                />
+              </div>
               <!-- select field -->
               <label for="subject" class="form-label"
                 >What is your question about?
@@ -547,6 +558,20 @@
                 </option>
                 <option value="other" class="text-primary">Other Query</option>
               </select>
+              <!-- textarea -->
+              <div class="form-floating mb-4 mt-5">
+                <textarea
+                  name=""
+                  id="query"
+                  class="form-control"
+                  style="height: 140px"
+                ></textarea>
+                <label for="query" class="form-label">Your query...</label>
+              </div>
+              <!-- form btn -->
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </div>
             </form>
           </div>
         </div>

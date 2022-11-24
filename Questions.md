@@ -9,3 +9,5 @@
 ### Like can i use normal css on my project and implement bootstap only where i need bootstrap to be added,
 
 ## something like if i want to use normal css on my hero section of a page but in a section like pricing section and i want to use bootstrap for the pricing cards, is it possible?
+
+### can those default borders and little shadows on the form while onclick be customized?

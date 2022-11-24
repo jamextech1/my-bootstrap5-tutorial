@@ -19,6 +19,9 @@
       body {
         overflow-x: hidden;
       }
+      .custom-tooltip {
+        --bs-tooltip-bg: rgb(7, 89, 196);
+      }
     </style>
   </head>
   <body>
@@ -84,11 +87,17 @@
           </div>
           <!-- hero col 2 -->
           <div class="col-md-5 text-center">
-            <img
-              src="/assets/ebook-cover.png"
-              alt=""
-              class="img-fluid d-none d-md-block"
-            />
+            <span
+              class="tt"
+              data-bs-placement="right"
+              title="Net Ninja Cover Book"
+            >
+              <img
+                src="/assets/ebook-cover.png"
+                alt=""
+                class="img-fluid d-none d-md-block"
+              />
+            </span>
           </div>
         </div>
       </div>
@@ -99,7 +108,7 @@
       <div class="container-lg">
         <!-- pricing header text -->
         <div class="text-center">
-          <h2>Pricing plans</h2>
+          <h2 class="tt">Pricing plans</h2>
           <p class="lead text-muted">Choose a pricing plan to suit you</p>
         </div>
 
@@ -531,6 +540,16 @@
                   id="email"
                   placeholder="e.g.mario@example.com"
                 />
+                <!-- tooltip -->
+                <span class="input-group-text">
+                  <span
+                    class="tt"
+                    data-bs-placement="right"
+                    title="Enter an email address we can reply to"
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
               </div>
 
               <label for="name" class="form-label">Name: </label>
@@ -544,6 +563,16 @@
                   id="name"
                   placeholder="e.g. Mario"
                 />
+                <!-- tooltip -->
+                <span class="input-group-text">
+                  <span
+                    class="tt"
+                    data-bs-placement="right"
+                    title="Pretty self explanatory really..."
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
               </div>
               <!-- select field -->
               <label for="subject" class="form-label"
@@ -586,6 +615,49 @@
     </section>
 
     <!-- get updates/modal trigger -->
+    <section class="bg-light">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Stay in the loop</h2>
+          <p class="lead text-muted">Get the latest updates as they happen</p>
+        </div>
+        <!--  -->
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="text-muted my-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, reiciendis amet atque provident iure nobis odit itaque
+              unde in quibusdam nihil sequi voluptas at. Sed quis id fugiat
+              accusamus aut. Lorem ipsum, dolor sit amet consectetur adipisicing
+              elit. Officia sequi explicabo eveniet, incidunt quis reiciendis
+              iure quisquam voluptatum provident illo distinctio, quidem modi
+              libero facilis saepe aut? A, porro blanditiis?
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#reg-modal"
+            >
+              Register For Updates
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- modal itself -->
+    <div
+      class="modal fade"
+      id="reg-modal"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content"></div>
+      </div>
+    </div>
 
     <!-- bootstrap javascript -->
     <script
@@ -593,5 +665,11 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
   </body>
 </html>

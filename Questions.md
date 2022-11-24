@@ -15,3 +15,5 @@
 ### Bro please is it a must i know all these classes, data-bs stuffs, even all these aria syntaxes in bootstrap, cos the way the man is coidn it, it seems like he actually knows them and i'm feeling like, Oh GOD, when am i even goin to learn and master all these stuff for a project.
 
 ### also, how do you advise i browse for docs on particular, thing i want to build, like how do i get to know how to modif them, whereas i really don't know what most of them, do, especially those, data-bs and aria tags abi syntax 😂😂😂💔💔?
+
+### Can OffCanvas be used for like side navigation?

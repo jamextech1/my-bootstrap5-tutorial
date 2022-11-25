@@ -11,3 +11,6 @@ section {
 .ri-close-line {
   display: none;
 }
+.modal-content {
+  box-shadow: 0 4px 4px rgba(121, 109, 1, 0.301);
+}

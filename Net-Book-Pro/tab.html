@@ -16,100 +16,120 @@
   </head>
   <body>
     <div class="container my-5">
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <!-- home tab btn -->
-        <button
-          class="nav-link active"
-          id="nav-home-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-home"
-          type="button"
-          role="tab"
-          aria-controls="nav-home"
-          aria-selected="true"
-        >
-          Home
-        </button>
-        <!-- profile tab btn -->
-
-        <button
-          class="nav-link active"
-          id="nav-profile-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-profile"
-          type="button"
-          role="tab"
-          aria-controls="nav-profile"
-          aria-selected="true"
-        >
-          Profile
-        </button>
-        <!-- contact tab btn -->
-
-        <button
-          class="nav-link active"
-          id="nav-contact-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-contact"
-          type="button"
-          role="tab"
-          aria-controls="nav-contact"
-          aria-selected="true"
-        >
-          Contact
-        </button>
-      </div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+          >
+            Home
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-pane"
+            aria-selected="false"
+          >
+            Profile
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-pane"
+            aria-selected="false"
+          >
+            Contact
+          </button>
+        </li>
+        <li class="nav-item ms-auto" role="presentation">
+          <button
+            class="nav-link"
+            id="disabled-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#disabled-tab-pane"
+            type="button"
+            role="button"
+            aria-controls="disabled-tab-pane"
+            aria-selected="false"
+            disabled
+          >
+            Disabled
+          </button>
+        </li>
+      </ul>
       <!-- tab content -->
-      <div class="tab-content" id="nav-tabContent">
-        <!-- tab home -->
+      <div class="tab-content" id="myTabContent">
         <div
-          class="tab-pane fade show active p-3"
-          id="nav-home"
+          class="tab-pane fade show active"
+          id="home-tab-pane"
           role="tabpanel"
           aria-labelledby="home-tab"
           tabindex="0"
         >
           <h2>Home</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
-            accusantium asperiores laudantium maiores laboriosam molestias
-            mollitia numquam eos harum sint, ipsum veniam, nesciunt corporis ab
-            quod vero sapiente qui doloribus.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste cum
+            mollitia laudantium neque quidem voluptatibus delectus iure eligendi
+            perferendis? Minima nesciunt animi debitis quaerat obcaecati nobis
+            velit consequuntur adipisci delectus!
           </p>
         </div>
-        <!-- tab profile -->
         <div
-          class="tab-pane fade p-3"
-          id="nav-profile"
+          class="tab-pane fade"
+          id="profile-tab-pane"
           role="tabpanel"
-          aria-labelledby="home-tab"
+          aria-labelledby="profile-tab"
           tabindex="0"
-          data-bs-toggle="#nav-profile"
-          data-bs-labelledby="nav-profile-tab"
         >
           <h2>Profile</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
-            accusantium asperiores laudantium maiores laboriosam molestias
-            mollitia numquam eos harum sint, ipsum veniam, nesciunt corporis ab
-            quod vero sapiente qui doloribus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+            molestiae facilis itaque ducimus culpa, maiores sit doloribus ipsam
+            recusandae adipisci ipsa corrupti quisquam tenetur, illo consectetur
+            deleniti dolorem omnis saepe.
           </p>
         </div>
-        <!-- tab contact -->
         <div
-          class="tab-pane fade p-3"
-          id="nav-contact"
+          class="tab-pane fade"
+          id="contact-tab-pane"
           role="tabpanel"
-          aria-labelledby="home-tab"
+          aria-labelledby="contact-tab"
           tabindex="0"
         >
           <h2>Contact</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
-            accusantium asperiores laudantium maiores laboriosam molestias
-            mollitia numquam eos harum sint, ipsum veniam, nesciunt corporis ab
-            quod vero sapiente qui doloribus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+            delectus ad dignissimos molestiae quasi pariatur commodi officia id
+            voluptas quod veniam non dicta consequuntur ex repellat possimus,
+            harum at reprehenderit!
           </p>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="disabled-tab-pane"
+          role="tabpanel"
+          aria-labelledby="disabled-tab"
+          tabindex="0"
+        >
+          ...
         </div>
       </div>
     </div>

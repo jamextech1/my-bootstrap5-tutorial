@@ -19,8 +19,12 @@
       body {
         overflow-x: hidden;
       }
-      .custom-tooltip {
-        --bs-tooltip-bg: rgb(7, 89, 196);
+      .btn-close-offcanvas:hover,
+      .btn-close-offcanvas:active {
+        box-shadow: 0 0 0 1px red !important;
+        background-color: #fff !important;
+        color: red !important;
+        border: none !important;
       }
     </style>
   </head>
@@ -84,6 +88,15 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <a href="#pricing" class="btn btn-secondary p2">Buy Now</a>
+            <!-- open the sidebar / offcanvas -->
+            <a
+              href="#sidebar"
+              class="d-block mt-3"
+              data-bs-toggle="offcanvas"
+              role="button"
+              aria-controls="sidebar"
+              >Explore My Other Books</a
+            >
           </div>
           <!-- hero col 2 -->
           <div class="col-md-5 text-center">
@@ -701,6 +714,56 @@
             </button>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- offcanvas -->
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="sidebar"
+      aria-labelledby="sidebar-label"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+        <button
+          type="button"
+          class="btn-close off-canvas-close-btn"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <!-- offcanvas body -->
+      <div class="offcanvas-body">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+          temporibus fugiat, unde non inventore amet at porro eum architecto
+          recusandae eligendi repellat quibusdam nisi esse rerum enim expedita
+          repellendus ullam!
+        </p>
+
+        <!-- drop down -->
+
+        <div class="dropdown mt-3">
+          <button
+            type="button"
+            class="btn btn-secondary dropdown-toggle"
+            id="book-dropdown"
+            data-bs-toggle="dropdown"
+          >
+            Choose a book title
+          </button>
+        </div>
+
+        <!-- offcanvas close btn -->
+        <button
+          type="button"
+          class="btn btn-danger mt-3 d-block btn-close-offcanvas"
+          data-bs-dismiss="offcanvas"
+        >
+          Close
+        </button>
       </div>
     </div>
 

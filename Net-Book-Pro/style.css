@@ -1,3 +1,13 @@
 section {
   padding: 60px 0;
 }
+body {
+  overflow-x: hidden;
+}
+.btn-close-offcanvas:hover,
+.btn-close-offcanvas:active {
+  box-shadow: 0 0 0 1px red !important;
+  background-color: #fff !important;
+  color: red !important;
+  border: none !important;
+}
